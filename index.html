@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231: Home - Ben Roberts</title>
+    <meta name="description"
+        content="This web page serves as the home page for WDD231.  It will be slighlty more simple but funtion as the introduction to the whole website.">
+    <meta name="author" content="Benjamin Roberts">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <header>
+        <img class="logo" src="images/home.svg" alt="Home Logo">
+        <span id="course-title">WDD231: Home - Ben Roberts</span>
+        <button id="menu"></button>
+        <section>
+            <nav class="link">
+                <ul class="navigation">
+                    <li><a href="https://paper-dad.github.io/wdd131/project/home.html">Home</a></li>
+                    <li><a href="https://paper-dad.github.io/wdd131/project/quiz.html">Chamber</a></li>
+                    <li><a href="https://paper-dad.github.io/wdd131/project/summary.html">Final</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
     <main>
-        <h1>Hello World!</h1>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <p class="intro">My name is Benjamin, but I go by Ben for short. I live in Lethbridge, Alberta with my son,
+                daughter, and wife. I love play video games and watching movies. My favorite movie is Indiana Jones and
+                the Last Crusade!</p>
+        </section>
+        <section class="card">
+            <h2>Student Photo</h2>
+            <img src="images/profile.webp" alt="Ben Roberts Photo">
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+        </section>
     </main>
+    <footer>
+        <p class="foot">&copy; | <span id="year"></span> | Ben Roberts | Canada</p>
+        <p class="footy">Last Updated: <span id="lastModified"></span></p>
+    </footer>
 </body>
+
 </html>

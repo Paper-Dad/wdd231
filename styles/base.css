@@ -1,0 +1,98 @@
+:root {
+    --primary-font: "Permanent Marker", cursive;
+    --secondary-font: "Roboto Slab", serif;
+    --primary-color: #6ee8f9;
+}
+
+
+/*header info*/
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: black;
+    max-width: 1000px;
+}
+
+header {
+    background-color: black;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    max-height: 110px;
+    justify-self: start;
+}
+
+
+.navigation a {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: var(--primary-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation.open a {
+    display: block;
+}
+
+
+/*Header info*/
+
+
+
+/* Footer Info*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    align-self: center;
+    background-color: black;
+    color: var(--primary-color);
+}
+
+.foot {
+    margin: 0;
+    padding: 10px;
+    font-size: x-large;
+}
+
+.footy {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+/*footer info*/
