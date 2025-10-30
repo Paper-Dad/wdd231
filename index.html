@@ -8,6 +8,7 @@
     <meta name="description"
         content="This web page serves as the home page for WDD231.  It will be slighlty more simple but funtion as the introduction to the whole website.">
     <meta name="author" content="Benjamin Roberts">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/home.js" defer></script>
@@ -19,36 +20,53 @@
 
 <body>
     <header>
-        <img class="logo" src="images/home.svg" alt="Home Logo">
-        <span id="course-title">WDD231: Home - Ben Roberts</span>
-        <button id="menu"></button>
-        <section>
-            <nav class="link">
-                <ul class="navigation">
-                    <li><a href="https://paper-dad.github.io/wdd131/project/home.html">Home</a></li>
-                    <li><a href="https://paper-dad.github.io/wdd131/project/quiz.html">Chamber</a></li>
-                    <li><a href="https://paper-dad.github.io/wdd131/project/summary.html">Final</a></li>
-                </ul>
-            </nav>
-        </section>
+        <img class="logo" src="images/home.svg" alt="Home Logo" width="512" height="512">
+        <span id="course-title">Home - Ben Roberts</span>
+        <button id="menu" class="hamburger"></button>
+
     </header>
+    <nav id="nav-bar" class="link">
+        <ul class="navigation">
+            <li class="current"><a href="https://paper-dad.github.io/wdd131/project/home.html">Home</a></li>
+            <li><a href="">Chamber Project</a></li>
+            <li><a href="">Final Project</a></li>
+        </ul>
+    </nav>
     <main>
         <h1>Home</h1>
-        <section class="card">
+        <section class="about">
             <h2>About Me</h2>
             <p class="intro">My name is Benjamin, but I go by Ben for short. I live in Lethbridge, Alberta with my son,
                 daughter, and wife. I love play video games and watching movies. My favorite movie is Indiana Jones and
                 the Last Crusade!</p>
         </section>
-        <section class="card">
+        <section class="photo">
             <h2>Student Photo</h2>
-            <img src="images/profile.webp" alt="Ben Roberts Photo">
+            <img src="images/self.webp" alt="Ben Roberts Photo">
         </section>
-        <section>
+        <section class="course">
             <h2>Web Certificate Courses</h2>
+            <div class="options">
+                <input type="submit" value="All">
+                <input type="submit" value="WDD">
+                <input type="submit" value="CSE">
+            </div>
+            <div id="course-list"></div>
+            <div id="credit-count"></div>
         </section>
     </main>
     <footer>
+        <nav class="socialmedia">
+            <a href="www.linkedin.com/in/ben-roberts-283044358" target="_blank">
+                <img src="images/linkedin.svg" alt="Linkedin Logo" width="16" height="16">
+            </a>
+            <a href="https://github.com/Paper-Dad/wdd231" target="_blank">
+                <img src="images/github.svg" alt="Github Logo" width="16" height="16">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="facebook Logo" width="16" height="16">
+            </a>
+        </nav>
         <p class="foot">&copy; | <span id="year"></span> | Ben Roberts | Canada</p>
         <p class="footy">Last Updated: <span id="lastModified"></span></p>
     </footer>
