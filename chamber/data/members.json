@@ -1,0 +1,74 @@
+{
+  "members": [
+    {
+      "name": "Prairie Bloom Landscaping",
+      "address": "1240 3 Ave S, Lethbridge, AB",
+      "phone": "(403) 555-2189",
+      "website": "https://www.prairiebloomlandscaping.ca",
+      "image": "prairiebloom.webp",
+      "membershipLevel": 3,
+      "established": 2012,
+      "description": "Award-winning landscape design and maintenance company specializing in sustainable prairie gardens."
+    },
+    {
+      "name": "Bridge City Coffee Roasters",
+      "address": "215 5 St S, Lethbridge, AB",
+      "phone": "(403) 555-3278",
+      "website": "https://www.bridgecitycoffee.ca",
+      "image": "bridgecitycoffee.webp",
+      "membershipLevel": 2,
+      "established": 2016,
+      "description": "Locally owned coffee roaster providing ethically sourced beans and a vibrant downtown café."
+    },
+    {
+      "name": "Southern Alberta Tech Solutions",
+      "address": "890 Mayor Magrath Dr S, Lethbridge, AB",
+      "phone": "(403) 555-4421",
+      "website": "https://www.satechsolutions.ca",
+      "image": "satech.webp",
+      "membershipLevel": 3,
+      "established": 2010,
+      "description": "Full-service IT consulting and networking support for small and medium businesses."
+    },
+    {
+      "name": "Golden Grain Bakery",
+      "address": "102 6 Ave N, Lethbridge, AB",
+      "phone": "(403) 555-0199",
+      "website": "https://www.goldengrainbakery.ca",
+      "image": "goldengrain.webp",
+      "membershipLevel": 1,
+      "established": 1998,
+      "description": "Family-run bakery known for fresh bread, pastries, and locally sourced ingredients."
+    },
+    {
+      "name": "Evergreen Insurance Brokers",
+      "address": "450 9 Ave S, Lethbridge, AB",
+      "phone": "(403) 555-7711",
+      "website": "https://www.evergreeninsurance.ca",
+      "image": "evergreen.webp",
+      "membershipLevel": 2,
+      "established": 2008,
+      "description": "Independent insurance broker offering home, auto, and business coverage across southern Alberta."
+    },
+    {
+      "name": "Mountain View Fitness",
+      "address": "12 10 St N, Lethbridge, AB",
+      "phone": "(403) 555-8899",
+      "website": "https://www.mountainviewfitness.ca",
+      "image": "mountainview.webp",
+      "membershipLevel": 1,
+      "established": 2019,
+      "description": "Community gym with group classes, personal training, and wellness programs."
+    },
+    {
+      "name": "Lethbridge Auto & Tire",
+      "address": "670 13 St N, Lethbridge, AB",
+      "phone": "(403) 555-4720",
+      "website": "https://www.lethbridgeautoandtire.ca",
+      "image": "autoandtire.webp",
+      "membershipLevel": 2,
+      "established": 2005,
+      "description": "Trusted automotive repair and tire center serving Lethbridge for over 15 years."
+    }
+  ]
+}
