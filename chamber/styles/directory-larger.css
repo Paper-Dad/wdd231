@@ -34,6 +34,14 @@
 
     /*Main*/
 
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /*footer*/
+    
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
