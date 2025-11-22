@@ -92,11 +92,6 @@ header span {
 
 /*Thank you HTML*/
 
-.join-container {
-    color: var(--primary-color);
-    font-family: var(--secondary-font);
-    padding: 1rem;
-}
 
 .thankyou-summary {
     background-color: var(--primary-color);
@@ -138,6 +133,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    padding: 1rem;
 }
 
 
