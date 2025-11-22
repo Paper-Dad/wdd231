@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lethbridge Chamber of Commerce | Join</title>
+    <meta name="description"
+        content="This web page serves as the Home page for the Lethbridge Chamber of Commerce.  It will display current events, local weather and local businesses spotlights unique to Lethbridge.">
+    <meta name="author" content="Benjamin Roberts">
+    <meta property="og:title" content="Join">
+    <meta property="og:description" content="Apply to become a member of the Lethbridge Chamber of Commerce">
+    <meta property="og:url" content="https://paper-dad.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://paper-dad.github.io/wdd231/chamber/images/lethbridge-icon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <script src="scripts/join.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/lethbridge-icon.webp" alt="Home Logo">
+        <span id="course-title">Lethbridge Chamber of Commerce</span>
+        <button id="menu" class="hamburger"></button>
+        <nav id="nav-bar" class="link">
+            <ul class="navigation">
+                <li><a href="https://paper-dad.github.io/wdd231/chamber/">Home</a></li>
+                <li><a href="https://paper-dad.github.io/wdd231/chamber/directory.html">Directory</a>
+                </li>
+                <li class="current"><a href="https://paper-dad.github.io/wdd231/chamber/join.html">Join</a></li>
+                <li><a href="https://paper-dad.github.io/wdd231/chamber/directory.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Join</h1>
+        <section class="join-form">
+            <h2>Membership Application</h2>
+
+            <form method="get" action="thankyou.html" id="joinForm">
+
+                <label>
+                    First Name:
+                    <input type="text" name="first-name" title="Enter your first name" autocomplete="given-name"
+                        required>
+                </label>
+
+                <label>
+                    Last Name:
+                    <input type="text" name="last-name" title="Enter your last name" autocomplete="family-name"
+                        required>
+                </label>
+
+                <label>
+                    Organizational Title:
+                    <input type="text" name="organization-title"
+                        title="Enter your title within the organization (letters, spaces, and hyphens only, at least 7 characters)"
+                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" title="Enter a valid email address" autocomplete="email"
+                        placeholder="example@company.com" required>
+                </label>
+
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="mobile-phone" title="Enter your mobile phone number" autocomplete="tel"
+                        required>
+                </label>
+
+                <label>
+                    Organization Name:
+                    <input type="text" name="organization" title="Enter the name of your business or organization"
+                        autocomplete="organization" required>
+                </label>
+
+                <label>
+                    Membership Level:
+                    <select name="membership-level" title="Select your desired membership level" required>
+                        <option value="">-- Select a Membership Level --</option>
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business/Organization Description:
+                    <textarea name="organization-description" title="Describe your business or organization"
+                        rows="4"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Apply to Join">
+
+            </form>
+        </section>
+        <section class="membership-info">
+            <h2>Membership Levels &amp; Benefits</h2>
+
+            <div class="levels">
+
+                <article class="level-card">
+                    <h3>NP Membership</h3>
+                    <p>For registered non-profit organizations. No fee.</p>
+                    <button type="button" class="modal-link" data-modal="np-modal">
+                        View NP Benefits
+                    </button>
+                </article>
+
+                <article class="level-card">
+                    <h3>Bronze</h3>
+                    <p>Great for small businesses getting started.</p>
+                    <button type="button" class="modal-link" data-modal="bronze-modal">
+                        View Bronze Benefits
+                    </button>
+                </article>
+
+                <article class="level-card">
+                    <h3>Silver</h3>
+                    <p>For growing organizations wanting more visibility.</p>
+                    <button type="button" class="modal-link" data-modal="silver-modal">
+                        View Silver Benefits
+                    </button>
+                </article>
+
+                <article class="level-card">
+                    <h3>Gold</h3>
+                    <p>Maximum exposure and chamber involvement.</p>
+                    <button type="button" class="modal-link" data-modal="gold-modal">
+                        View Gold Benefits
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="modal" id="np-modal" role="dialog" aria-modal="true" aria-labelledby="np-modal-title"
+            aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close NP Membership details">&times;</button>
+                <h2 id="np-modal-title">NP Membership Benefits</h2>
+                <p>Designed for registered non-profit organizations in Lethbridge.</p>
+                <ul>
+                    <li>No annual membership fee</li>
+                    <li>Basic directory listing with contact details</li>
+                    <li>Access to select chamber events</li>
+                    <li>Networking with community partners</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="modal" id="bronze-modal" role="dialog" aria-modal="true" aria-labelledby="bronze-modal-title"
+            aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close Bronze Membership details">&times;</button>
+                <h2 id="bronze-modal-title">Bronze Membership Benefits</h2>
+                <p>Ideal for small businesses building their local presence.</p>
+                <ul>
+                    <li>Enhanced business directory listing</li>
+                    <li>1 homepage spotlight each year</li>
+                    <li>Member pricing on chamber events</li>
+                    <li>Access to small business resources</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="modal" id="silver-modal" role="dialog" aria-modal="true" aria-labelledby="silver-modal-title"
+            aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close Silver Membership details">&times;</button>
+                <h2 id="silver-modal-title">Silver Membership Benefits</h2>
+                <p>Perfect for growing businesses seeking more visibility and support.</p>
+                <ul>
+                    <li>Priority placement in the directory</li>
+                    <li>3 homepage spotlight features per year</li>
+                    <li>Discounted access to training and workshops</li>
+                    <li>Invitations to select networking events</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="modal" id="gold-modal" role="dialog" aria-modal="true" aria-labelledby="gold-modal-title"
+            aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close Gold Membership details">&times;</button>
+                <h2 id="gold-modal-title">Gold Membership Benefits</h2>
+                <p>Best for organizations wanting maximum exposure and influence.</p>
+                <ul>
+                    <li>Top placement in the directory</li>
+                    <li>Unlimited homepage spotlight features</li>
+                    <li>VIP access and recognition at major events</li>
+                    <li>Eligibility for leadership councils and committees</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <section class="adress">
+            <p>Lethbridge Chamber of Commerce</p>
+            <p>910 4 Ave S</p>
+            <p>Lethbridge, AB, T1J 4E4</p>
+            <p>(403) 320-3111</p>
+        </section>
+        <section class="social">
+            <nav class="socialmedia">
+                <a href="https://www.linkedin.com/in/ben-roberts-283044358/" target="_blank">
+                    <img src="images/linkedin.svg" alt="Linkedin Logo" width="16" height="16">
+                </a>
+                <a href="https://github.com/Paper-Dad/wdd231" target="_blank">
+                    <img src="images/github.svg" alt="Github Logo" width="16" height="16">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook.svg" alt="facebook Logo" width="16" height="16">
+                </a>
+            </nav>
+        </section>
+        <section class="course-info">
+            <p>WDD231 Class Project</p>
+            <p>Ben Roberts</p>
+            <p class="foot">&copy; | <span id="year"></span> | Chamber of Commerce</p>
+            <p class="footy">Last Updated: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>

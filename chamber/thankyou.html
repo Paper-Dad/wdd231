@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Lethbridge Chamber of Commerce</title>
+    <meta name="description" content="Thank you for applying to join the Lethbridge Chamber of Commerce.">
+    <meta name="author" content="Benjamin Roberts">
+
+    <meta property="og:title" content="Thank You">
+    <meta property="og:description" content="Your membership application has been received.">
+    <meta property="og:url" content="https://paper-dad.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:image" content="https://paper-dad.github.io/wdd231/chamber/images/lethbridge-icon.png">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+
+    <script src="scripts/join.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/lethbridge-icon.webp" alt="Home Logo">
+        <span id="course-title">Lethbridge Chamber of Commerce</span>
+        <button id="menu" class="hamburger"></button>
+        <nav id="nav-bar" class="link">
+            <ul class="navigation">
+                <li><a href="https://paper-dad.github.io/wdd231/chamber/">Home</a></li>
+                <li><a href="https://paper-dad.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                <li class="current"><a href="https://paper-dad.github.io/wdd231/chamber/join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-container">
+
+        <section class="join-intro">
+            <h1>Thank You for Your Application</h1>
+            <p>We’ve received your membership application for the Lethbridge Chamber of Commerce.</p>
+        </section>
+
+        <section class="join-form">
+            <h2>Submitted Information</h2>
+
+            <div class="thankyou-summary">
+                <p>Here is the information you submitted:</p>
+
+                <dl>
+                    <dt>First Name</dt>
+                    <dd id="confirmFirstName"></dd>
+
+                    <dt>Last Name</dt>
+                    <dd id="confirmLastName"></dd>
+
+                    <dt>Email</dt>
+                    <dd id="confirmEmail"></dd>
+
+                    <dt>Mobile Phone</dt>
+                    <dd id="confirmPhone"></dd>
+
+                    <dt>Business / Organization</dt>
+                    <dd id="confirmOrganization"></dd>
+
+                    <dt>Form Submitted</dt>
+                    <dd id="confirmTimestamp"></dd>
+                </dl>
+            </div>
+
+            <p>If any of this information is incorrect, please go back and submit the form again.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="adress">
+            <p>Lethbridge Chamber of Commerce</p>
+            <p>910 4 Ave S</p>
+            <p>Lethbridge, AB, T1J 4E4</p>
+            <p>(403) 320-3111</p>
+        </section>
+
+        <section class="social">
+            <nav class="socialmedia">
+                <a href="https://www.linkedin.com/in/ben-roberts-283044358/" target="_blank">
+                    <img src="images/linkedin.svg" alt="Linkedin Logo" width="16" height="16">
+                </a>
+                <a href="https://github.com/Paper-Dad/wdd231" target="_blank">
+                    <img src="images/github.svg" alt="Github Logo" width="16" height="16">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook.svg" alt="facebook Logo" width="16" height="16">
+                </a>
+            </nav>
+        </section>
+
+        <section class="course-info">
+            <p>WDD231 Class Project</p>
+            <p>Ben Roberts</p>
+            <p class="foot">&copy; | <span id="year"></span> | Chamber of Commerce</p>
+            <p class="footy">Last Updated: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const firstName = params.get("first-name") || "";
+        const lastName = params.get("last-name") || "";
+        const email = params.get("email") || "";
+        const phone = params.get("mobile-phone") || "";
+        const organization = params.get("organization") || "";
+        const timestampRaw = params.get("timestamp") || "";
+
+        document.getElementById("confirmFirstName").textContent = firstName;
+        document.getElementById("confirmLastName").textContent = lastName;
+        document.getElementById("confirmEmail").textContent = email;
+        document.getElementById("confirmPhone").textContent = phone;
+        document.getElementById("confirmOrganization").textContent = organization;
+
+
+        let formattedTimestamp = timestampRaw;
+        if (timestampRaw) {
+            const tsDate = new Date(timestampRaw);
+            if (!isNaN(tsDate)) {
+                formattedTimestamp = tsDate.toLocaleString();
+            }
+        }
+        document.getElementById("confirmTimestamp").textContent = formattedTimestamp;
+    </script>
+</body>
+
+</html>
