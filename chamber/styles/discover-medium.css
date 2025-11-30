@@ -1,0 +1,69 @@
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /*Header Info*/
+
+    header span {
+    font-size:  1.1rem;
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+
+    #nav-bar {
+        display: flex;
+        grid-column: 3;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #nav-bar a {
+        border: none;
+    }
+
+    /*Header*/
+
+    /*Main*/
+    .items-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    .item-card img:hover {
+        box-shadow: 0 0 30px var(--secondary-color);
+    }
+
+    .item-card img {
+        transition: box-shadow 0.2s ease;
+    }
+
+    /*footer*/
+    
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+        justify-content: center;
+        gap: 1rem;
+        text-align: left;
+        max-width: 900px;
+        font-size: small;
+    }
+    
+    footer section {
+        padding: .5rem;
+    }
+}
