@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Quiz Results</title>
+
+    <link rel="stylesheet" href="styles/results.css">
+    <script src="scripts/quiz-result.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon-ta.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Your Avatar Quiz Results</h1>
+    </header>
+
+    <main>
+        <div class="results-container" id="results-display">
+            <img id="nation-image" src="" alt="Nation symbol" style="display:none">
+            <div id="nation-text"></div>
+            <div class="result-row">
+            <strong>Favorite Snack:</strong> <span id="answer-element"></span>
+            </div>
+            <div class="result-row">
+            <strong>Personality Trait:</strong> <span id="answer-trait"></span>
+            </div>
+            <div class="result-row">
+            <strong>Favorite Character:</strong> <span id="answer-color"></span>
+            </div>
+
+        </div>
+        <button class="back-btn" onclick="window.location.href='quiz.html'">Retake Quiz</button><span id="display-nation"></span>
+    </main>
+
+</body>
+</html>

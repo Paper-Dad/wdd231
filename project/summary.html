@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231: Summary - Ben Roberts</title>
+    <meta name="description"
+        content="This web page serves as the summary page for Team Avater Fan Page.  It will list each episode and have a short summary of that episode.">
+    <meta name="author" content="Benjamin Roberts">
+    <meta property="og:title" content="Episode Summary">
+    <meta property="og:description" content="Keep track of your adventure with Avatar!">
+    <meta property="og:url" content="https://paper-dad.github.io/wdd231/project/summary.html">
+    <meta property="og:image" content="https://paper-dad.github.io/wdd231/project/images/Team-Avatar-Logo.webp">
+    <link rel="stylesheet" href="styles/summary.css">
+    <link rel="stylesheet" href="styles/summary-large.css">
+    <script src="scripts/summary.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon-ta.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/Team-Avatar-Logo.webp" alt="Team Avatar Logo">
+        <button id="menu"></button>
+        <nav class="link">
+            <ul class="navigation">
+                <li><a href="https://paper-dad.github.io/wdd231/project/home.html">Home</a></li>
+                <li><a href="https://paper-dad.github.io/wdd231/project/quiz.html">Quiz</a></li>
+                <li class="current"><a href="https://paper-dad.github.io/wdd231/project/summary.html">Summary</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Avatar: The Last Airbender Episode Tracker</h1>
+        <label for="bookFilter">Filter by Book:</label>
+        <select id="bookFilter">
+            <option value="All">All</option>
+            <option value="Water">Book One: Water</option>
+            <option value="Earth">Book Two: Earth</option>
+            <option value="Fire">Book Three: Fire</option>
+        </select>
+        <div id="episode-container"></div>
+    </main>
+    <footer>
+        <p class="foot">&copy; | <span id="year"></span> | Ben Roberts | Canada</p>
+        <p class="footy">Last Updated: <span id="lastModified"></span></p>
+        <a class="video" href="https://www.youtube.com/">**Video Demonstration**</a>
+    </footer>
+</body>
+
+</html>

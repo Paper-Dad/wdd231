@@ -1,0 +1,214 @@
+:root {
+  --primary-font: "Permanent Marker", cursive;
+  --secondary-font: "Roboto Slab", serif;
+  --primary-color: #6ee8f9;
+}
+
+
+/*header info*/
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: black;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+header {
+  background-color: black;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.logo {
+  max-height: 75px;
+  justify-self: start;
+}
+
+
+.navigation a {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 2rem;
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.current a {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#menu {
+  font-size: 2rem;
+  border: 0;
+  background: none;
+  color: var(--primary-color);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+.navigation.open a {
+  display: block;
+}
+
+
+
+
+/*header info*/
+
+/*Label Info*/
+
+label,
+select {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Roboto Slab", serif;
+  color: white;
+}
+
+select {
+  background: black;
+  color: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+
+/*Label Info*/
+
+body {
+  font-family: "Roboto Slab", serif;
+  background: black;
+  color: white;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  color: #80d8ff;
+  margin-top: 1rem;
+}
+
+.book {
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/*Rows*/
+
+
+.episode {
+  background: black;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-family: var(--secondary-font);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.episode:hover {
+  background: white;
+  transform: scale(1.02);
+  color: black;
+}
+
+.episode.watched {
+  background-color: var(--primary-color);
+  color: black;
+}
+
+.ep-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ep-title {
+  font-weight: bold;
+}
+
+
+/* Footer Info*/
+
+footer {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  align-self: center;
+  background-color: black;
+  color: var(--primary-color);
+}
+
+.foot {
+  margin: 0;
+  padding: 10px;
+  font-size: x-large;
+}
+
+.footy {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+
+.video {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+  color: var(--primary-color);
+  padding: 10px;
+}
+
+/*footer info*/

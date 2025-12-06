@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231: Quiz Page - Ben Roberts</title>
+    <meta name="description"
+        content="This web page serves as the quiz page for Team Avater Fan Page.  It will contain a quiz that will help the user determine what ATLA kingdom they are from.">
+    <meta name="author" content="Benjamin Roberts">
+    <meta property="og:title" content="Team Avatar Quiz">
+    <meta property="og:description" content="What Avatar Nation are you from?">
+    <meta property="og:url" content="https://paper-dad.github.io/wdd231/project/quiz.html">
+    <meta property="og:image" content="https://paper-dad.github.io/wdd231/project/images/Team-Avatar-Logo.webp">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <link rel="stylesheet" href="styles/quiz-large.css">
+    <script src="scripts/quiz.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon-ta.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/Team-Avatar-Logo.webp" alt="Team Avatar Logo">
+        <button id="menu"></button>
+        <nav class="link">
+            <ul class="navigation">
+                <li><a href="https://paper-dad.github.io/wdd231/project/home.html">Home</a></li>
+                <li class="current"><a href="https://paper-dad.github.io/wdd231/project/quiz.html">Quiz</a></li>
+                <li><a href="https://paper-dad.github.io/wdd231/project/summary.html">Summary</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Which Nation are You?</h1>
+        <img class="elem" src="images/four-elements.webp" alt="Four Elements">
+        <form id="quizForm" action="quiz-result.html" method="GET">
+            <fieldset>
+                <legend>1. What is your favorite Avatar snack?</legend>
+                <label><input type="radio" name="element" value="Blubbered Seal Jerky"> Blubbered Seal Jerky</label>
+                <label><input type="radio" name="element" value="Cabbage Soup"> Cabbage Soup</label>
+                <label><input type="radio" name="element" value="Flaming Fire Flakes"> Flaming Fire Flakes</label>
+                <label><input type="radio" name="element" value="Egg Custard Tart"> Egg Custard Tart</label>
+            </fieldset>
+            <fieldset>
+                <legend>2. Which trait best describes you?</legend>
+                <label><input type="radio" name="trait" value="Calm"> Calm</label>
+                <label><input type="radio" name="trait" value="Strong"> Strong</label>
+                <label><input type="radio" name="trait" value="Passionate"> Passionate</label>
+                <label><input type="radio" name="trait" value="Free-Spirited"> Free-Spirited</label>
+            </fieldset>
+            <fieldset>
+                <legend>3. Who is your favorite Character?</legend>
+                <label><input type="radio" name="color" value="Katara"> Katara</label>
+                <label><input type="radio" name="color" value="Toph"> Toph</label>
+                <label><input type="radio" name="color" value="Uncle Iroh"> Uncle Iroh</label>
+                <label><input type="radio" name="color" value="Aang"> Aang</label>
+            </fieldset>
+
+            <button type="submit">Find My Nation</button>
+        </form>
+        <section id="result">
+            <h2 id="nation-text">Yip Yip!</h2>
+            <img id="nation-image" src="holder" alt="Nation Image" style="display:none;">
+        </section>
+    </main>
+    <footer>
+        <p class="foot">&copy; | <span id="year"></span> | Ben Roberts | Canada</p>
+        <p class="footy">Last Updated: <span id="lastModified"></span></p>
+        <a class="video" href="https://www.youtube.com/">**Video Demonstration**</a>
+    </footer>
+</body>
+
+</html>

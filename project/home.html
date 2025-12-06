@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231: Team Avatar - Ben Roberts</title>
+    <meta name="description"
+        content="This web page serves as the home page for Team Avater Fan Page.  It will be slighlty more simple but funtion as the introduction to the whole website.">
+    <meta name="author" content="Benjamin Roberts">
+    <meta property="og:title" content="Team Avatar Home">
+    <meta property="og:description" content="Join Team Avater and become a bending master!">
+    <meta property="og:url" content="https://paper-dad.github.io/wdd231/project/home.html">
+    <meta property="og:image" content="https://paper-dad.github.io/wdd231/project/images/Team-Avatar-Logo.webp">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon-ta.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/Team-Avatar-Logo.webp" alt="Team Avatar Logo">
+        <button id="menu"></button>
+        <nav class="link">
+            <ul class="navigation">
+                <li class="current"><a href="https://paper-dad.github.io/wdd231/project/home.html">Home</a></li>
+                <li><a href="https://paper-dad.github.io/wdd231/project/quiz.html">Quiz</a></li>
+                <li><a href="https://paper-dad.github.io/wdd231/project/summary.html">Summary</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Meet the G'Aang</h1>
+        <section>
+            <figure class="character iroh">
+                <img src="images/Iroh-resize.webp" alt="Uncle Iroh" loading="lazy">
+                <figcaption>Uncle Iroh</figcaption>
+            </figure>
+            <p class="text">Step into the world of Avatar: The Last Airbender, where benders shape the elements—and
+                friendships are just as powerful as fire blasts! Whether you’re a proud Water Tribe warrior, a calm Air
+                Nomad, an Earth Kingdom loyalist, or a passionate Fire Nation fan (we forgive you), you’ll find
+                something to love here. Explore your favorite characters, relive epic moments, and maybe even discover
+                which element chooses you!</p>
+            <figure class="character zuzu">
+                <img src="images/Azula-resize.webp" alt="Princess Azula" loading="lazy">
+                <figcaption>Princess Azula</figcaption>
+            </figure>
+        </section>
+        <figure class="hero character">
+            <img src="images/Gaang_ATLA_Generations.webp" alt="Team Avatar" loading="lazy">
+            <figcaption>Team Avatar</figcaption>
+        </figure>
+        <button id="openModal">Meet Team Avatar</button>
+        <div id="homeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Welcome to the G'Aang!</h2>
+                <p>Aang - The cheerful and adventurous Avatar, Aang can bend all four elements and carries the weight of
+                    saving the world</p>
+                <p>Katara - A compassionate waterbender, Katara is dedicated to healing, helping others, and fighting
+                    for justice.</p>
+                <p>Sokka - A non-bender warrior with a sharp mind and humor, Sokka is a strategist, loyal friend, and
+                    big brother.</p>
+                <p>Toph - A blind but powerful earthbender, Toph is tough, witty, and the inventor of metalbending.</p>
+                <p>Suki - The skilled Kyoshi Warrior, Suki is brave, disciplined, and an inspiring fighter who protects
+                    her friends.</p>
+                <p>Zuko - A hot-headed firebender struggling to regain his honor, Zuko grows from an enemy into a true
+                    hero.</p>
+                <p>Appa - Aang’s loyal flying bison, Appa is strong, dependable, and always there when Team Avatar needs
+                    him.</p>
+                <p>Momo - The playful lemur companion, Momo brings humor, curiosity, and heart to the group.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="foot">&copy; | <span id="year"></span> | Ben Roberts | Canada</p>
+        <p class="footy">Last Updated: <span id="lastModified"></span></p>
+        <a class="video" href="https://www.youtube.com/">**Video Demonstration**</a>
+    </footer>
+</body>
+
+</html>
