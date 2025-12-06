@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Quiz Results</title>
-
+    <title>WDD 231: Quiz Results - Ben Roberts</title>
+    <meta name="description"
+        content="This web page serves as the quiz results page for Team Avater Fan Page.  It will display the results of the quiz.">
+    <meta name="author" content="Benjamin Roberts">
+    <meta property="og:title" content="Quiz Results">
+    <meta property="og:description" content="What Nation are You From?">
+    <meta property="og:url" content="https://paper-dad.github.io/wdd231/project/quiz-results.html">
+    <meta property="og:image" content="https://paper-dad.github.io/wdd231/project/images/Team-Avatar-Logo.webp">
     <link rel="stylesheet" href="styles/results.css">
     <script src="scripts/quiz-result.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,18 +31,20 @@
             <img id="nation-image" src="" alt="Nation symbol" style="display:none">
             <div id="nation-text"></div>
             <div class="result-row">
-            <strong>Favorite Snack:</strong> <span id="answer-element"></span>
+                <strong>Favorite Snack:</strong> <span id="answer-element"></span>
             </div>
             <div class="result-row">
-            <strong>Personality Trait:</strong> <span id="answer-trait"></span>
+                <strong>Personality Trait:</strong> <span id="answer-trait"></span>
             </div>
             <div class="result-row">
-            <strong>Favorite Character:</strong> <span id="answer-color"></span>
+                <strong>Favorite Character:</strong> <span id="answer-color"></span>
             </div>
 
         </div>
-        <button class="back-btn" onclick="window.location.href='quiz.html'">Retake Quiz</button><span id="display-nation"></span>
+        <button class="back-btn" onclick="window.location.href='quiz.html'">Retake Quiz</button><span
+            id="display-nation"></span>
     </main>
 
 </body>
+
 </html>
